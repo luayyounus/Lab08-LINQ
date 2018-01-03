@@ -53,5 +53,14 @@ namespace Manhattan_Properties.Classes
 
             return uniqueNeighborhoods;
         }
+
+        public IEnumerable<Feature> AllInOneSingleQuery()
+        {
+            RootObject rootObject = ReadJson();
+
+            var allInOne = rootObject.Features.Where(j => j.Properties.Neighborhood != "").GroupBy(p => p.Properties.Neighborhood).Select(m => m.First());
+
+            return allInOne;
+        }
     }
 }
