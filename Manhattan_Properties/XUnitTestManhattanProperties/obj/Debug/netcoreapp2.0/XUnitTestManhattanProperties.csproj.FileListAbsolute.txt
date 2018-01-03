@@ -1,0 +1,16 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\XUnitTestManhattanProperties.deps.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\XUnitTestManhattanProperties.runtimeconfig.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\XUnitTestManhattanProperties.runtimeconfig.dev.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\XUnitTestManhattanProperties.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\XUnitTestManhattanProperties.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\Manhattan_Properties.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\bin\Debug\netcoreapp2.0\Manhattan_Properties.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\obj\Debug\netcoreapp2.0\XUnitTestManhattanProperties.csprojResolveAssemblyReference.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\obj\Debug\netcoreapp2.0\XUnitTestManhattanProperties.csproj.CoreCompileInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\obj\Debug\netcoreapp2.0\XUnitTestManhattanProperties.AssemblyInfoInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\obj\Debug\netcoreapp2.0\XUnitTestManhattanProperties.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\obj\Debug\netcoreapp2.0\XUnitTestManhattanProperties.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\XUnitTestManhattanProperties\obj\Debug\netcoreapp2.0\XUnitTestManhattanProperties.pdb

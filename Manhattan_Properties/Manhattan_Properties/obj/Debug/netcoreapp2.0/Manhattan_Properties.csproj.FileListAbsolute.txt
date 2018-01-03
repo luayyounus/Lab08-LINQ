@@ -1,0 +1,11 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\bin\Debug\netcoreapp2.0\Manhattan_Properties.deps.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\bin\Debug\netcoreapp2.0\Manhattan_Properties.runtimeconfig.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\bin\Debug\netcoreapp2.0\Manhattan_Properties.runtimeconfig.dev.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\bin\Debug\netcoreapp2.0\Manhattan_Properties.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\obj\Debug\netcoreapp2.0\Manhattan_Properties.csprojResolveAssemblyReference.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\obj\Debug\netcoreapp2.0\Manhattan_Properties.csproj.CoreCompileInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\obj\Debug\netcoreapp2.0\Manhattan_Properties.AssemblyInfoInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\obj\Debug\netcoreapp2.0\Manhattan_Properties.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\bin\Debug\netcoreapp2.0\Manhattan_Properties.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\obj\Debug\netcoreapp2.0\Manhattan_Properties.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab08-LINQ\Manhattan_Properties\Manhattan_Properties\obj\Debug\netcoreapp2.0\Manhattan_Properties.pdb
