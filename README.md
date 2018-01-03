@@ -1,53 +1,64 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Lab 8 : LINQ in Manhatten
-=====================================
+# Manhattan Properties with LINQ
 
-## To Submit this Assignment
-- fork this repository
-- write all of your code in a directory named `lab-#`; + `<your name>` **e.g.** `lab08-amanda`
-- push to your repository
-- submit a pull request to this repository
-- submit a link to your PR in canvas
+**Author**: Luay Younus
+**Version**: 1.0
 
+## Overview
+A property output console application that present queries to the user based on different conditons.
 
-## Directions
-Provided is a JSON file that contains a data set of location information for properties in Manhatten.
-- Read in the file and answer the questions below
-- Use LINQ queries and Lambda statements (when appropriate) to find the answers. 
+## Requirements to run the Application
+- [Visual Studio 2017 Community with .NET Core 2.0 SDK](https://www.microsoft.com/net/core#windowscmd)
+- [GitBash / Terminal](https://git-scm.com/downloads) or [GitHub Extension for Visual Studio](https://visualstudio.github.com)
 
-## Setup
-- Add the data.json file to your solution root folder
-- Explore the NuGet packages and install NewtonSoftJson
-- Do some self research and find out how to read in JSON file (hint: JsonConvert.DeserializedOject is *part* of it)
-- You will need to break up each section of the JSON file up into different classes, use your resources - ask the TA's if your stuck. (Maybe find a converter of some sort??)
-- Review what the possible Extension Methosd are, and use them to answer the questions below?
-- 
-#### Questions
-Each query builds off of the next. 
-1. Output all of the neighborhoods in this data list
-2. Filter out all the neighborhoods that do not have any names
-3. Remove the Duplicates
-4. Rewrite the queries from above, and consolidate all into one single query.
-5. Rewrite at least one of these questions only using a LINQ query (without lambda statement)
+## Getting Started
+1. Clone the repository to your local machine.
+2. Cd into the application directory where the `AppName.sln` exist.
+3. Open the application using `Open/Start AppName.sln`.
+4. Once Visual Studio is opened, you can Run the application by clicking on the Play button <img src="https://github.com/luayyounus/Lab02-Unit-Testing/blob/Lab02-Luay/WarCardGame/play-button.jpg" width="16"> .
 
-## ReadMe
-A README is a module consumer's first -- and maybe only -- look into your creation. The consumer wants a module to fulfill their need, so you must explain exactly what need your module fills, and how effectively it does so.
-<br />
-Your job is to
+### An interface will be presented to the user asking for an entry to print out the properties available.
 
-1. tell them what it is (with context)
-2. show them what it looks like in action
-3. show them how they use it
-4. tell them any other relevant details
-<br />
+### Packages used in the application
+- [NewtonSoftJson](https://www.newtonsoft.com/json)
+- [JSON2Csharp Classes Maker](http://json2csharp.com/)
 
-This is ***your*** job. It's up to the module creator to prove that their work is a shining gem in the sea of slipshod modules. Since so many developers' eyes will find their way to your README before anything else, quality here is your public-facing measure of your work.
+## Project Explanation
 
-<br /> <br /> Refer to the sample-README in the class repo for an example. 
-- [Reference](https://github.com/noffle/art-of-readme)
+###### Provided a Data.Json file with a list of properties, the following are performed to retrieve data
+1. Define Classes using JSON2Csharp tool each with their own properties
+- RootObject
+- Feature
+- Geometry
+- Properties
 
-## Rubric
-- 7pts: Program meets all requirements described in Lab directions
-- 3pts: Code meets industry standards
+2. Class JsonDeserializer is where NewtonSoft Json tool is used to de-serializing the data in file using the `RootObjectClass`.
+```C#
+string json = sr.ReadToEnd();
 
-- **Readme.md required for submission. Missing readme document and tests will result in a best score of 2/10**
+RootObject featuresCollection = JsonConvert.DeserializeObject<RootObject>(json);
+```
 
+3. Next, the neighborhood are filtered based on the query performed
+- Query to get All Neighborhoods
+```C#
+IEnumerable<Feature> allNeighborhoods = from obj in rootObject.Features
+                                        where obj.Properties.Neighborhood != null
+                                        select obj;
+```
+- Query to get Neighborhoods without empty name fields
+```C#
+var filteredNeighborhoods = allNeighborhoods.Where(n => n.Properties.Neighborhood != "");
+```
+
+- Query to find the first apperance of every neighborhood and group them into a collection
+```C#
+var uniqueNeighborhoods = filteredNeighborhoods.GroupBy(p => p.Properties.Neighborhood).Select(m => m.First());
+```
+
+- Query to sum up all the previous queries in one single line
+```C#
+var allInOne = rootObject.Features.Where(j => j.Properties.Neighborhood != "").GroupBy(p => p.Properties.Neighborhood).Select(m => m.First());
+```
+
+## Architecture
+ - C# Console Core application.
