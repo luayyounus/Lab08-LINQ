@@ -36,5 +36,12 @@ namespace Manhattan_Properties.Classes
                 from obj in rootObject.Features where obj.Properties.Neighborhood != null select obj;
             return allNeighborhoods;
         }
+
+        public IEnumerable<Feature> GetFilteredNeighborhoods(IEnumerable<Feature> allNeighborhoods)
+        {
+            var filteredNeighborhoods = allNeighborhoods.Where(n => n.Properties.Neighborhood != "");
+
+            return filteredNeighborhoods;
+        }
     }
 }
