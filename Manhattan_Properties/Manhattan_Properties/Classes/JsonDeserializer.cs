@@ -17,6 +17,7 @@ namespace Manhattan_Properties.Classes
                 using (StreamReader sr = new StreamReader(path))
                 {
                     string json = sr.ReadToEnd();
+
                     RootObject featuresCollection = JsonConvert.DeserializeObject<RootObject>(json);
 
                     return featuresCollection;
@@ -32,8 +33,10 @@ namespace Manhattan_Properties.Classes
         public IEnumerable<Feature> GetAllNeighborhoods()
         {
             RootObject rootObject = ReadJson();
-            IEnumerable<Feature> allNeighborhoods =
-                from obj in rootObject.Features where obj.Properties.Neighborhood != null select obj;
+
+            IEnumerable<Feature> allNeighborhoods = from obj in rootObject.Features
+                                                    where obj.Properties.Neighborhood != null
+                                                    select obj;
             return allNeighborhoods;
         }
 
@@ -42,6 +45,13 @@ namespace Manhattan_Properties.Classes
             var filteredNeighborhoods = allNeighborhoods.Where(n => n.Properties.Neighborhood != "");
 
             return filteredNeighborhoods;
+        }
+
+        public IEnumerable<Feature> GetUniqueNeighborhoods(IEnumerable<Feature> filteredNeighborhoods)
+        {
+            var uniqueNeighborhoods = filteredNeighborhoods.GroupBy(p => p.Properties.Neighborhood).Select(m => m.First());
+
+            return uniqueNeighborhoods;
         }
     }
 }
