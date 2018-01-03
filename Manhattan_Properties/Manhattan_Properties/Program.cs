@@ -66,6 +66,7 @@ namespace Manhattan_Properties
             {
                 Console.WriteLine(f.Properties.Neighborhood);
             }
+            Console.WriteLine(" -- Number of Neighborhoods: {0} --", features.Count());
         }
     }
 }
