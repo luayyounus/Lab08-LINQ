@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 
@@ -8,8 +9,9 @@ namespace Manhattan_Properties.Classes
 {
     internal class JsonDeserializer
     {
-        public RootObject ReadJson(string path)
+        private RootObject ReadJson()
         {
+            string path = "data.json";
             try
             {
                 using (StreamReader sr = new StreamReader(path))
@@ -25,6 +27,14 @@ namespace Manhattan_Properties.Classes
                 Console.WriteLine(e.Message);
                 throw;
             }
+        }
+
+        public IEnumerable<Feature> GetAllNeighborhoods()
+        {
+            RootObject rootObject = ReadJson();
+            IEnumerable<Feature> allNeighborhoods =
+                from obj in rootObject.Features where obj.Properties.Neighborhood != null select obj;
+            return allNeighborhoods;
         }
     }
 }
