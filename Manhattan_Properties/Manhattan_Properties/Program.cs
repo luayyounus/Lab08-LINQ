@@ -33,19 +33,20 @@ namespace Manhattan_Properties
 
             // Creating an instance of the Json Serializer Class
             JsonDeserializer js = new JsonDeserializer();
+            RootObject rootObject = js.ReadJson();
 
             switch (char.Parse(userInput))
             {
                 case '1':
-                    var result = js.GetAllNeighborhoods();
+                    var result = js.GetAllNeighborhoods(rootObject);
                     PrintProperties(result);
                     return true;
                 case '2':
-                    var result2 = js.GetFilteredNeighborhoods(js.GetAllNeighborhoods());
+                    var result2 = js.GetFilteredNeighborhoods(js.GetAllNeighborhoods(rootObject));
                     PrintProperties(result2);
                     return true;
                 case '3':
-                    var result3 = js.GetUniqueNeighborhoods(js.GetFilteredNeighborhoods(js.GetAllNeighborhoods()));
+                    var result3 = js.GetUniqueNeighborhoods(js.GetFilteredNeighborhoods(js.GetAllNeighborhoods(rootObject)));
                     PrintProperties(result3);
                     return true;
                 case '4':

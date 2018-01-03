@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Manhattan_Properties.Classes
 {
-    class Properties
+    public class Properties
     {
         public string Zip { get; set; }
         public string City { get; set; }

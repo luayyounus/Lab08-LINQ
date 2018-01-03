@@ -6,13 +6,13 @@ using Newtonsoft.Json;
 
 namespace Manhattan_Properties.Classes
 {
-    internal class JsonDeserializer
+    public class JsonDeserializer
     {
         /// <summary>
         /// This is a private method that reads the JSON file making an instance of the Root Object Class.
         /// </summary>
         /// <returns>Returning an instance of Root object with a list of Features</returns>
-        private RootObject ReadJson()
+        public RootObject ReadJson()
         {
             string path = "data.json";
             try
@@ -38,10 +38,8 @@ namespace Manhattan_Properties.Classes
         /// This method reads the json file and apply a LINQ query to retrieve all neighborhoods
         /// </summary>
         /// <returns>Returns all neighborhoods in an IEnumerable generic Collection</returns>
-        public IEnumerable<Feature> GetAllNeighborhoods()
+        public IEnumerable<Feature> GetAllNeighborhoods(RootObject rootObject)
         {
-            RootObject rootObject = ReadJson();
-
             IEnumerable<Feature> allNeighborhoods = from obj in rootObject.Features
                                                     where obj.Properties.Neighborhood != null
                                                     select obj;

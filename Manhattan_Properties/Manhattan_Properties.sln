@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manhattan_Properties", "Manhattan_Properties\Manhattan_Properties.csproj", "{A22AEB59-0E81-4E18-B47C-4A6F712EC60D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manhattan_Properties", "Manhattan_Properties\Manhattan_Properties.csproj", "{A22AEB59-0E81-4E18-B47C-4A6F712EC60D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestManhattanProperties", "XUnitTestManhattanProperties\XUnitTestManhattanProperties.csproj", "{98EB0054-1DD9-4CD9-9E03-8B66CACC765D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A22AEB59-0E81-4E18-B47C-4A6F712EC60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22AEB59-0E81-4E18-B47C-4A6F712EC60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22AEB59-0E81-4E18-B47C-4A6F712EC60D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EB0054-1DD9-4CD9-9E03-8B66CACC765D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EB0054-1DD9-4CD9-9E03-8B66CACC765D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EB0054-1DD9-4CD9-9E03-8B66CACC765D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EB0054-1DD9-4CD9-9E03-8B66CACC765D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
