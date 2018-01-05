@@ -12,7 +12,7 @@ namespace XUnitTestManhattanProperties
         public void Return_All_Neighborhoods_Not_Empty()
         {
             // Arrange
-            StreamReader sr = new StreamReader("data.json");
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\data.json");
             string json = sr.ReadToEnd();
             RootObject featuresCollection = JsonConvert.DeserializeObject<RootObject>(json);
             JsonDeserializer jd = new JsonDeserializer();
